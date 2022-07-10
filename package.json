@@ -1,0 +1,15 @@
+{
+  "name": "node-api",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "esbuild src/index.ts --minify --bundle --format=cjs --legal-comments=none --platform=node --outfile=dist/index.js",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "fastify": "^4.2.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.14.48"
+  }
+}
